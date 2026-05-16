@@ -48,6 +48,10 @@ if [[ $iatest > 0 ]]; then bind "set completion-ignore-case on"; fi
 # Show auto-completion list automatically, without double tab
 if [[ $iatest > 0 ]]; then bind "set show-all-if-ambiguous On"; fi
 
+# Cycle through options
+bind 'set show-all-if-ambiguous on'
+bind 'TAB:menu-complete'
+
 # Set the default editor
 export EDITOR=nano
 export VISUAL=nano
